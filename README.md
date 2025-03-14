@@ -26,7 +26,7 @@ uploads > user profile pictures.
 index.php, profile.php, login.php, blog.php > website pages.
 
 
-Start Website:
+Start Website
 ---------------------------------------------
 Download and run OpenServer, configure it according to the configuration above. 
 While in the OpenServer folder, go to the domain, create a folder with the project name and upload all the files from github there. 
