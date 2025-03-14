@@ -9,10 +9,20 @@ Crazy Blog is a web blog that anyone can run.
 Project structure
 ---------------------------------------------
 assets > css, images, js files.
+
+
 database > crazyblog.sql.
+
+
 includes > query handlers and page building blocks.
+
+
 uploads > user profile pictures.
+
+
 .htaccess > Apache server configuration.
+
+
 index.php, profile.php, login.php, blog.php > website pages.
 
 
