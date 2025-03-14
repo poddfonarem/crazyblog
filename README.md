@@ -2,8 +2,12 @@
 Crazy Blog is a web blog that anyone can run.
 
 
-# Configuration: Apache 2.4, PHP 8.0, MYSQL 8.0.
-# Frameworks: Bootstrap 5.3.
+# Configuration
+Apache 2.4, PHP 8.0, MYSQL 8.0.
+
+
+# Frameworks 
+Bootstrap 5.3.
 
 
 Project structure
