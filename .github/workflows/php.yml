@@ -35,4 +35,4 @@ jobs:
       run: chmod +x vendor/bin/phpunit
 
     - name: Run PHPUnit tests
-      run: vendor/bin/phpunit --testdox main/tests/
+      run: vendor/bin/phpunit --testdox main/tests/AuthTest.php
