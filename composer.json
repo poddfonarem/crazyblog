@@ -1,6 +1,8 @@
 {
     "name": "poddfonarem/crazyblog",
     "type": "project",
+    "description": "Мій PHP-проект",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
