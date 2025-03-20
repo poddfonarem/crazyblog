@@ -11,14 +11,10 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Run PHPUnit tests
-      run: vendor/bin/phpunit --testdox
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -35,5 +31,8 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+    - name: Grant execute permissions to PHPUnit
+      run: chmod +x vendor/bin/phpunit
+
+    - name: Run PHPUnit tests
+      run: vendor/bin/phpunit --testdox
