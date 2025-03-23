@@ -1,0 +1,22 @@
+namespace: Tests
+support_namespace: Support
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/Support/Data
+    support: tests/Support
+    envs: tests/_envs
+actor_suffix: Tester
+suites:
+    acceptance:
+        actor: AcceptanceTester
+        modules:
+            enabled:
+                - PhpBrowser:
+                      url: 'http://crazyblog'
+                - Asserts
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+
+
