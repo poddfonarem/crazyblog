@@ -1,0 +1,32 @@
+Feature: User posts and profile
+
+Background:                       # features/scenario.feature:4
+Given I am a registered user   # FeatureContext::iAmARegisteredUser()
+And I am logged in             # FeatureContext::iAmLoggedIn()
+
+Scenario: Creating a new post    # features/scenario.feature:8
+Given I am on "/profile"
+When I fill in "title" with "My First Post"
+And I fill in "content" with "This is a test post."
+And I press "Create Post"
+Then I should see "Post created successfully"
+And I should see "My First Post"
+
+Scenario: Commenting on a post   # features/scenario.feature:15
+Given a post titled "Interesting Topic" exists
+And I am on the post page
+When I fill in "comment" with "Great post!"
+And I press "Add Comment"
+Then I should see "Comment added"
+And I should see "Great post!"
+
+Scenario: Editing profile name   # features/scenario.feature:22
+Given I am on "/profile"
+When I fill in "name" with "New Username"
+And I press "Save Changes"
+Then I should see "Profile updated"
+And I should see "New Username"
+
+3 scenarios (3 passed)
+16 steps (16 passed)
+0m1.23s (17.43Mb)
