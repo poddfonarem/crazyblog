@@ -1,38 +1,61 @@
-# Crazy Blog
-Crazy Blog is a web blog that anyone can run.
+# 📝 Crazy Blog
 
+**Crazy Blog** is a simple web blog that can be deployed on any local server. It is suitable for learning, testing, or creating personal blogs.
 
-# Configuration
-Apache 2.4, PHP 8.0, MYSQL 8.0.
+---
 
+## ⚙️ Requirements
 
-# Frameworks 
-Bootstrap 5.3.
+- Apache 2.4
+- PHP 8.0
+- MySQL 8.0
 
+---
 
-Project structure
----------------------------------------------
-assets > css, images, js files.
+## 🧰 Frameworks Used
 
+- [Bootstrap 5.3](https://getbootstrap.com/)
 
-database > crazyblog.sql.
+---
 
+## 📁 Project Structure
 
-includes > query handlers and page building blocks.
+```
+├── .github/workflows         # CI/CD configuration (GitHub Actions)
+├── assets/                   # CSS, images, JS
+├── database/                 # SQL dump (crazyblog.sql)
+├── includes/                 # Query handlers, page blocks
+├── src/Services/             # Service classes
+├── tests/                    # Automated tests (Behat, Codeception...)
+├── uploads/                  # Uploaded user avatars
+├── .htaccess                 # Apache configuration
+├── index.php                 # Main page
+├── login.php                 # Login page
+├── profile.php               # User profile page
+├── blog.php                  # Blog page
+├── composer.json / lock      # Composer configuration
+├── phpstan.neon              # PHPStan config
+├── behat.yml                 # Behat config
+├── codeception.yml           # Codeception config
+```
 
+---
 
-uploads > user profile pictures.
+## 🚀 How to Run
 
+1. **Download and install [OpenServer](https://ospanel.io/)**.
+2. Configure OpenServer to use Apache 2.4, PHP 8.0, and MySQL 8.0.
+3. In the `domains` folder, create a directory named `crazy-blog` (or any other name) and copy the contents of this repository there.
+4. Launch OpenServer.
+5. Open phpMyAdmin (via OpenServer) and import the `crazyblog.sql` file from the `database` folder.
+6. Open the site in your browser: `http://crazy-blog/`
 
-.htaccess > Apache server configuration.
+---
 
+## 📄 License
 
-index.php, profile.php, login.php, blog.php > website pages.
+See [LICENSE](./LICENSE) file.
 
+---
 
-Start Website
----------------------------------------------
-Download and run OpenServer, configure it according to the configuration above. 
-While in the OpenServer folder, go to the domain, create a folder with the project name and upload all the files from github there. 
-Run phpMyAdmin from OpenServer and import the crazyblog.sql file from the database folder of the project root.
-
+🌐 Made with ❤️ PODDFONAREM
